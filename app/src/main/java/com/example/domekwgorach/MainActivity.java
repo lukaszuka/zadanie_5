@@ -17,13 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Inicjalizacja widoków
         nazwa = findViewById(R.id.nazwa);
         like = findViewById(R.id.like);
         delete = findViewById(R.id.delete);
         count = findViewById(R.id.count);
 
-        // Ustawienie nasłuchiwaczy
         like.setOnClickListener(v -> {
             county++;
             updateCount();
